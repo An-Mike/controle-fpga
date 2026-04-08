@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -2.153
+TNS   : -4.302
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.775
+TNS   : -4.967
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.221
+TNS   : -17.801
+
+Type  : Slow 1200mV 85C Model Hold 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 2.391
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.246
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -1.845
+TNS   : -3.686
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.603
+TNS   : -4.649
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 0.927
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.800
+TNS   : -13.841
+
+Type  : Slow 1200mV 0C Model Hold 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -0.684
+TNS   : -0.684
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 2.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.702
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -0.890
+TNS   : -1.779
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.144
+TNS   : -0.144
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 2.293
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.522
+TNS   : -10.625
+
+Type  : Fast 1200mV 0C Model Hold 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : -0.442
+TNS   : -0.442
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 1.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'capteurs_sol:capteurs_inst|channel[0]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.445
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.279
+TNS   : 0.000
+
+------------------------------------------------------------
