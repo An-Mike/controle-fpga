@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lights
-Wed Apr 08 16:22:31 2026
+Wed Apr 08 16:42:07 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -52,15 +52,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 08 16:22:31 2026            ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 08 16:42:07 2026            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lights                                           ;
 ; Top-level Entity Name              ; lights                                           ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 126                                              ;
-;     Total combinational functions  ; 86                                               ;
-;     Dedicated logic registers      ; 73                                               ;
-; Total registers                    ; 73                                               ;
+; Total logic elements               ; 137                                              ;
+;     Total combinational functions  ; 96                                               ;
+;     Dedicated logic registers      ; 75                                               ;
+; Total registers                    ; 75                                               ;
 ; Total pins                         ; 18                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -74,6 +74,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
 ; Top-level entity name                                                      ; lights             ; lights             ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -197,20 +198,20 @@ applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                    ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 126                                                                                      ;
+; Estimated Total logic elements              ; 137                                                                                      ;
 ;                                             ;                                                                                          ;
-; Total combinational functions               ; 86                                                                                       ;
+; Total combinational functions               ; 96                                                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                                                          ;
-;     -- 4 input functions                    ; 37                                                                                       ;
-;     -- 3 input functions                    ; 24                                                                                       ;
-;     -- <=2 input functions                  ; 25                                                                                       ;
+;     -- 4 input functions                    ; 39                                                                                       ;
+;     -- 3 input functions                    ; 26                                                                                       ;
+;     -- <=2 input functions                  ; 31                                                                                       ;
 ;                                             ;                                                                                          ;
 ; Logic elements by mode                      ;                                                                                          ;
-;     -- normal mode                          ; 71                                                                                       ;
+;     -- normal mode                          ; 81                                                                                       ;
 ;     -- arithmetic mode                      ; 15                                                                                       ;
 ;                                             ;                                                                                          ;
-; Total registers                             ; 73                                                                                       ;
-;     -- Dedicated logic registers            ; 73                                                                                       ;
+; Total registers                             ; 75                                                                                       ;
+;     -- Dedicated logic registers            ; 75                                                                                       ;
 ;     -- I/O registers                        ; 0                                                                                        ;
 ;                                             ;                                                                                          ;
 ; I/O pins                                    ; 18                                                                                       ;
@@ -220,8 +221,8 @@ applicable agreement for further details.
 ;                                             ;                                                                                          ;
 ; Maximum fan-out node                        ; pll_2freqs:PLL_inst|altpll:altpll_component|pll40_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 50                                                                                       ;
-; Total fan-out                               ; 535                                                                                      ;
-; Average fan-out                             ; 2.73                                                                                     ;
+; Total fan-out                               ; 566                                                                                      ;
+; Average fan-out                             ; 2.72                                                                                     ;
 +---------------------------------------------+------------------------------------------------------------------------------------------+
 
 
@@ -230,9 +231,9 @@ applicable agreement for further details.
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------+
-; |lights                                ; 86 (0)            ; 73 (0)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |lights                                                                         ; work         ;
+; |lights                                ; 96 (8)            ; 75 (1)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |lights                                                                         ; work         ;
 ;    |calculateur:calc_inst|             ; 25 (25)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|calculateur:calc_inst                                                   ; work         ;
-;    |capteurs_sol:capteurs_inst|        ; 61 (61)           ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|capteurs_sol:capteurs_inst                                              ; work         ;
+;    |capteurs_sol:capteurs_inst|        ; 63 (63)           ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|capteurs_sol:capteurs_inst                                              ; work         ;
 ;    |pll_2freqs:PLL_inst|               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|pll_2freqs:PLL_inst                                                     ; work         ;
 ;       |altpll:altpll_component|        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|pll_2freqs:PLL_inst|altpll:altpll_component                             ; work         ;
 ;          |pll40_altpll:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lights|pll_2freqs:PLL_inst|altpll:altpll_component|pll40_altpll:auto_generated ; work         ;
@@ -295,12 +296,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 73    ;
+; Total registers                              ; 75    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Clear ; 30    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 44    ;
+; Number of registers using Clock Enable       ; 45    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -310,8 +311,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |lights|calculateur:calc_inst|res_tmp[1]      ;
-; 10:1               ; 5 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |lights|capteurs_sol:capteurs_inst|Selector12 ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |lights|calculateur:calc_inst|res_tmp[5]      ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; No         ; |lights|capteurs_sol:capteurs_inst|Selector11 ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |lights|capteurs_sol:capteurs_inst|Selector10 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
@@ -716,18 +717,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "capteurs_sol:capteurs_inst"                                                                ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; data_readyr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data2r      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data3r      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data4r      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data5r      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data6r      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "capteurs_sol:capteurs_inst"                                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; data2r ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; data3r ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; data4r ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; data5r ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; data6r ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------+
@@ -754,36 +754,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Apr 08 16:21:48 2026
+    Info: Processing started: Wed Apr 08 16:41:28 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lights -c lights
 Info (11104): Parallel Compilation has detected 24 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 16 of the 16 physical processors detected instead.
 Info (12248): Elaborating Qsys system entity "v1.qsys"
-Info (12250): 2026.04.08.16:21:59 Progress: Loading v3/v1.qsys
-Info (12250): 2026.04.08.16:21:59 Progress: Reading input file
-Info (12250): 2026.04.08.16:21:59 Progress: Adding clk_0 [clock_source 13.0]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module clk_0
-Info (12250): 2026.04.08.16:21:59 Progress: Adding CPU [altera_nios2_qsys 13.0]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module CPU
-Info (12250): 2026.04.08.16:21:59 Progress: Adding MEMOIRE [altera_avalon_onchip_memory2 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module MEMOIRE
-Info (12250): 2026.04.08.16:21:59 Progress: Adding SW [altera_avalon_pio 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module SW
-Info (12250): 2026.04.08.16:21:59 Progress: Adding LED [altera_avalon_pio 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module LED
-Info (12250): 2026.04.08.16:21:59 Progress: Adding JTAG [altera_avalon_jtag_uart 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module JTAG
-Info (12250): 2026.04.08.16:21:59 Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module SDRAM
-Info (12250): 2026.04.08.16:21:59 Progress: Adding clocks [altera_up_clocks 13.0]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module clocks
-Info (12250): 2026.04.08.16:21:59 Progress: Adding MOTOR_LEFT [altera_avalon_pio 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module MOTOR_LEFT
-Info (12250): 2026.04.08.16:21:59 Progress: Adding MOTOR_RIGHT [altera_avalon_pio 13.0.1.99.2]
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing module MOTOR_RIGHT
-Info (12250): 2026.04.08.16:21:59 Progress: Building connections
-Info (12250): 2026.04.08.16:21:59 Progress: Parameterizing connections
-Info (12250): 2026.04.08.16:21:59 Progress: Validating
-Info (12250): 2026.04.08.16:22:00 Progress: Done reading input file
+Info (12250): 2026.04.08.16:41:38 Progress: Loading v3/v1.qsys
+Info (12250): 2026.04.08.16:41:38 Progress: Reading input file
+Info (12250): 2026.04.08.16:41:39 Progress: Adding clk_0 [clock_source 13.0]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module clk_0
+Info (12250): 2026.04.08.16:41:39 Progress: Adding CPU [altera_nios2_qsys 13.0]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module CPU
+Info (12250): 2026.04.08.16:41:39 Progress: Adding MEMOIRE [altera_avalon_onchip_memory2 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module MEMOIRE
+Info (12250): 2026.04.08.16:41:39 Progress: Adding SW [altera_avalon_pio 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module SW
+Info (12250): 2026.04.08.16:41:39 Progress: Adding LED [altera_avalon_pio 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module LED
+Info (12250): 2026.04.08.16:41:39 Progress: Adding JTAG [altera_avalon_jtag_uart 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module JTAG
+Info (12250): 2026.04.08.16:41:39 Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module SDRAM
+Info (12250): 2026.04.08.16:41:39 Progress: Adding clocks [altera_up_clocks 13.0]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module clocks
+Info (12250): 2026.04.08.16:41:39 Progress: Adding MOTOR_LEFT [altera_avalon_pio 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module MOTOR_LEFT
+Info (12250): 2026.04.08.16:41:39 Progress: Adding MOTOR_RIGHT [altera_avalon_pio 13.0.1.99.2]
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing module MOTOR_RIGHT
+Info (12250): 2026.04.08.16:41:39 Progress: Building connections
+Info (12250): 2026.04.08.16:41:39 Progress: Parameterizing connections
+Info (12250): 2026.04.08.16:41:39 Progress: Validating
+Info (12250): 2026.04.08.16:41:40 Progress: Done reading input file
 Info (12250): V1.SW: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): V1: Generating v1 "v1" for QUARTUS_SYNTH
 Info (12250): Pipeline_bridge_swap_transform: After transform: 10 modules, 39 connections
@@ -868,42 +868,42 @@ Warning (12251): V1: "No matching role found for rst_controller:reset_out:reset_
 Warning (12251): V1: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Warning (12251): V1: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Info (12250): CPU: Starting RTL generation for module 'v1_CPU'
-Info (12250): CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=v1_CPU --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0001_CPU_gen//v1_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
-Info (12250): CPU: # 2026.04.08 16:22:04 (*) Starting Nios II generation
-Info (12250): CPU: # 2026.04.08 16:22:04 (*)   Checking for plaintext license.
-Info (12250): CPU: # 2026.04.08 16:22:21 (*)   Plaintext license not found.
-Info (12250): CPU: # 2026.04.08 16:22:21 (*)   No license required to generate encrypted Nios II/e.
-Info (12250): CPU: # 2026.04.08 16:22:21 (*)   Elaborating CPU configuration settings
-Info (12250): CPU: # 2026.04.08 16:22:21 (*)   Creating all objects for CPU
-Info (12250): CPU: # 2026.04.08 16:22:22 (*)   Generating RTL from CPU objects
-Info (12250): CPU: # 2026.04.08 16:22:22 (*)   Creating plain-text RTL
-Info (12250): CPU: # 2026.04.08 16:22:24 (*) Done Nios II generation
+Info (12250): CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=v1_CPU --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0001_CPU_gen//v1_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info (12250): CPU: # 2026.04.08 16:41:43 (*) Starting Nios II generation
+Info (12250): CPU: # 2026.04.08 16:41:43 (*)   Checking for plaintext license.
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   Plaintext license not found.
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   Elaborating CPU configuration settings
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   Creating all objects for CPU
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   Generating RTL from CPU objects
+Info (12250): CPU: # 2026.04.08 16:42:00 (*)   Creating plain-text RTL
+Info (12250): CPU: # 2026.04.08 16:42:01 (*) Done Nios II generation
 Info (12250): CPU: Done RTL generation for module 'v1_CPU'
 Info (12250): CPU: "v1" instantiated altera_nios2_qsys "CPU"
 Info (12250): MEMOIRE: Starting RTL generation for module 'v1_MEMOIRE'
-Info (12250): MEMOIRE:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=v1_MEMOIRE --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0002_MEMOIRE_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0002_MEMOIRE_gen//v1_MEMOIRE_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): MEMOIRE:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=v1_MEMOIRE --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0002_MEMOIRE_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0002_MEMOIRE_gen//v1_MEMOIRE_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): MEMOIRE: Done RTL generation for module 'v1_MEMOIRE'
 Info (12250): MEMOIRE: "v1" instantiated altera_avalon_onchip_memory2 "MEMOIRE"
 Info (12250): SW: Starting RTL generation for module 'v1_SW'
-Info (12250): SW:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_SW --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0003_SW_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0003_SW_gen//v1_SW_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): SW:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_SW --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0003_SW_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0003_SW_gen//v1_SW_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): SW: Done RTL generation for module 'v1_SW'
 Info (12250): SW: "v1" instantiated altera_avalon_pio "SW"
 Info (12250): LED: Starting RTL generation for module 'v1_LED'
-Info (12250): LED:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_LED --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0004_LED_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0004_LED_gen//v1_LED_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): LED:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_LED --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0004_LED_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0004_LED_gen//v1_LED_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): LED: Done RTL generation for module 'v1_LED'
 Info (12250): LED: "v1" instantiated altera_avalon_pio "LED"
 Info (12250): JTAG: Starting RTL generation for module 'v1_JTAG'
-Info (12250): JTAG:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=v1_JTAG --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0005_JTAG_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0005_JTAG_gen//v1_JTAG_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): JTAG:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=v1_JTAG --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0005_JTAG_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0005_JTAG_gen//v1_JTAG_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): JTAG: Done RTL generation for module 'v1_JTAG'
 Info (12250): JTAG: "v1" instantiated altera_avalon_jtag_uart "JTAG"
 Info (12250): SDRAM: Starting RTL generation for module 'v1_SDRAM'
-Info (12250): SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=v1_SDRAM --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0006_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0006_SDRAM_gen//v1_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=v1_SDRAM --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0006_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0006_SDRAM_gen//v1_SDRAM_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): SDRAM: Done RTL generation for module 'v1_SDRAM'
 Info (12250): SDRAM: "v1" instantiated altera_avalon_new_sdram_controller "SDRAM"
 Info (12250): Clocks: Starting Generation of Required Clocks for DE-Series Boards
 Info (12250): Clocks: "v1" instantiated altera_up_clocks "clocks"
 Info (12250): MOTOR_LEFT: Starting RTL generation for module 'v1_MOTOR_LEFT'
-Info (12250): MOTOR_LEFT:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_MOTOR_LEFT --dir=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0008_MOTOR_LEFT_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_1490664249178335898.dir/0008_MOTOR_LEFT_gen//v1_MOTOR_LEFT_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): MOTOR_LEFT:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=v1_MOTOR_LEFT --dir=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0008_MOTOR_LEFT_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/secours/AppData/Local/Temp/alt0551_4741266957381463413.dir/0008_MOTOR_LEFT_gen//v1_MOTOR_LEFT_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): MOTOR_LEFT: Done RTL generation for module 'v1_MOTOR_LEFT'
 Info (12250): MOTOR_LEFT: "v1" instantiated altera_avalon_pio "MOTOR_LEFT"
 Info (12250): CPU_instruction_master_translator: "v1" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
@@ -1072,7 +1072,6 @@ Warning (10037): Verilog HDL or VHDL warning at v1_SDRAM.v(326): conditional exp
 Warning (10037): Verilog HDL or VHDL warning at v1_SDRAM.v(336): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at v1_SDRAM.v(680): conditional expression evaluates to a constant
 Info (12127): Elaborating entity "lights" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at lights.vhd(33): object "data_ready" assigned a value but never read
 Info (12128): Elaborating entity "pll_2freqs" for hierarchy "pll_2freqs:PLL_inst"
 Info (12128): Elaborating entity "altpll" for hierarchy "pll_2freqs:PLL_inst|altpll:altpll_component"
 Info (12130): Elaborated megafunction instantiation "pll_2freqs:PLL_inst|altpll:altpll_component"
@@ -1184,16 +1183,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
-Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 156 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 126 logic cells
+    Info (21061): Implemented 137 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 4712 megabytes
-    Info: Processing ended: Wed Apr 08 16:22:31 2026
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 113 warnings
+    Info: Peak virtual memory: 4711 megabytes
+    Info: Processing ended: Wed Apr 08 16:42:07 2026
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +------------------------------------------+
